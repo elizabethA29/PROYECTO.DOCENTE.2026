@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>ACTIVIDADES | 📂INTRODUCCIÓN  </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Irene Elizabeth Agila Ramirez" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-90"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">📂INTRODUCCIÓN </div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">🏠INICIO</a></li>
+   <li><a href="introduccin.html" class="no-ch">📝INTRODUCCIÓN</a></li>
+   <li><a href="semana_1.html" class="daddy">📂SEMANA 1</a>
+   <ul class="other-section">
+      <li><a href="contenidos.html" class="no-ch">CONTENIDOS</a></li>
+      <li><a href="actividades.html" class="no-ch">ACTIVIDADES</a></li>
+   </ul>
+   </li>
+   <li><a href="semana_2.html" class="daddy">📂SEMANA 2</a>
+   <ul class="other-section">
+      <li><a href="contenidos0.html" class="no-ch">CONTENIDOS</a></li>
+      <li><a href="actividades0.html" class="no-ch">ACTIVIDADES</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="semana_3.html" class="current-page-parent daddy">📂SEMANA 3</a>
+   <ul>
+      <li><a href="contenidos1.html" class="no-ch">CONTENIDOS</a></li>
+      <li id="active"><a href="actividades1.html" class="active no-ch">ACTIVIDADES</a></li>
+      <li><a href="seccin.html" class="no-ch">Sección</a></li>
+   </ul>
+   </li>
+   <li><a href="semana_4.html" class="daddy">📂SEMANA 4</a>
+   <ul class="other-section">
+      <li><a href="contenidos2.html" class="no-ch">CONTENIDOS</a></li>
+      <li><a href="actividades2.html" class="no-ch">ACTIVIDADES</a></li>
+   </ul>
+   </li>
+   <li><a href="semana_5.html" class="daddy">📂SEMANA 5</a>
+   <ul class="other-section">
+      <li><a href="contenidos3.html" class="no-ch">CONTENIDOS</a></li>
+      <li><a href="actividades3.html" class="no-ch">ACTIVIDADES</a></li>
+   </ul>
+   </li>
+   <li><a href="semana_6.html" class="daddy">📂SEMANA 6</a>
+   <ul class="other-section">
+      <li><a href="contenidos4.html" class="no-ch">CONTENIDOS</a></li>
+      <li><a href="actividades4.html" class="no-ch">ACTIVIDADES</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="contenidos1.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="seccin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">ACTIVIDADES</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id30">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Actividad: Desarrollo para el movimiento de la araña.</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta30_138_2" class="block iDevice_content">
+<div class="exe-text"><p><strong>En este apartado se presenta  el código.</strong></p>
+<p>## 1. Inclusión de Librerías y Definiciones</p>
+<p>```cpp</p>
+<p>#include &lt;setjmp.h&gt;</p>
+<p>#include "GoBLE.h"</p>
+<p>#include "MiniKame.h"</p>
+<p>```</p>
+<p>- Se incluyen las librerías necesarias: `setjmp.h` para manejo de saltos, `GoBLE.h` para la comunicación Bluetooth y `MiniKame.h` para controlar el robot.</p>
+<p> </p>
+<p>### Definiciones de Macros</p>
+<p> </p>
+<p>```cpp</p>
+<p>#define __DEBUG__</p>
+<p>//#define __HC_SR04__</p>
+<p>```</p>
+<p>- `__DEBUG__`: Activa el modo de depuración.</p>
+<p>- `__HC_SR04__`: Permite el uso del sensor ultrasónico HC-SR04 (actualmente comentado).</p>
+<p> </p>
+<p>### Definiciones de Pines y Comandos</p>
+<p> </p>
+<p>```cpp</p>
+<p>#define HC_SR04_TRIGGER_PIN A4</p>
+<p>#define HC_SR04_ECHO_PIN    A5</p>
+<p>#define CAL_TRIGGER_PIN 12</p>
+<p>#define LED_PIN A6</p>
+<p>```</p>
+<p>- Se definen los pines utilizados por el sensor ultrasónico y otros componentes como el LED.</p>
+<p> </p>
+<p>### Comandos de Movimiento</p>
+<p> </p>
+<p>```cpp</p>
+<p>#define FORWARD 'F'</p>
+<p>#define LEFT 'L'</p>
+<p>#define STAND 'S'</p>
+<p>#define RIGHT 'R'</p>
+<p>#define BACKWARD 'B'</p>
+<p>```</p>
+<p>- Se definen los comandos que el robot puede recibir para moverse en diferentes direcciones.</p>
+<p> </p>
+<p>## 2. Variables Globales</p>
+<p> </p>
+<p>```cpp</p>
+<p>MiniKame robot;</p>
+<p>bool auto_mode = true;  // Inicia en modo autónomo</p>
+<p>char cmd = STAND;</p>
+<p>```</p>
+<p>- Se crea una instancia del robot y se definen variables para controlar el modo (autónomo o manual) y el comando actual.</p>
+<p> </p>
+<p>## 3. Configuración Inicial (`setup`)</p>
+<p> </p>
+<p>```cpp</p>
+<p>void setup() {</p>
+<p>  Serial.begin(9600);</p>
+<p>#ifdef __DEBUG__</p>
+<p>  softSerial.begin(9600);</p>
+<p>  softSerial.println("debugging mode");</p>
+<p>#endif</p>
+<p>  robot.init();</p>
+<p>  delay(2000);</p>
+<p>  // Calibración del servo</p>
+<p>}</p>
+<p>```</p>
+<p>- Se inicializa la comunicación serie y el robot. Si el modo de depuración está activo, se configura un puerto serie adicional.</p>
+<p> </p>
+<p>### Calibración del Servo</p>
+<p> </p>
+<p>```cpp</p>
+<p>bool state = true;</p>
+<p>pinMode(CAL_TRIGGER_PIN, OUTPUT);</p>
+<p>digitalWrite(CAL_TRIGGER_PIN, 0);</p>
+<p>pinMode(CAL_TRIGGER_PIN, INPUT);</p>
+<p>while (digitalRead(CAL_TRIGGER_PIN)) {</p>
+<p>  analogWrite(LED_PIN, 128 * state); // LED de calibración</p>
+<p>  delay(1000);</p>
+<p>  state = !state;</p>
+<p>}</p>
+<p>```</p>
+<p>- Se calibra el servo utilizando un LED para indicar el estado de calibración.</p>
+<p> </p>
+<p>## 4. Bucle Principal (`loop`)</p>
+<p> </p>
+<p>```cpp</p>
+<p>void loop() {</p>
+<p>  cur_time = millis();</p>
+<p>  if (Serial.available()) {</p>
+<p>    char received = Serial.read();</p>
+<p>    // Procesar comandos recibidos</p>
+<p>  }</p>
+<p>  if (auto_mode) {</p>
+<p>    // Movimiento automático</p>
+<p>  }</p>
+<p>  gaits(cmd);</p>
+<p>  robot.refresh();</p>
+<p>}</p>
+<p>```</p>
+<p>- El bucle principal verifica si hay comandos disponibles a través del puerto serie y ejecuta acciones basadas en el modo actual (automático o manual).</p>
+<p> </p>
+<p>### Procesamiento de Comandos</p>
+<p> </p>
+<p>```cpp</p>
+<p>if (received == 'X') {</p>
+<p>  auto_mode = false;  // Activar modo inalámbrico</p>
+<p>  cmd = STAND;</p>
+<p>} else if (received == 'x') {</p>
+<p>  auto_mode = true;  // Activar modo autónomo</p>
+<p>}</p>
+<p>```</p>
+<p>- Cambia entre modos autónomo e inalámbrico según el comando recibido.</p>
+<p> </p>
+<p>## 5. Movimiento Automático</p>
+<p> </p>
+<p>```cpp</p>
+<p>static char movements[] = {FORWARD, LEFT, OMNI_WALK_R, OMNI_WALK_L, RIGHT, BACKWARD, PUSH_UP, UP_DOWN, HELLO, DANCE, FRONT_BACK, MOON_WALK};</p>
+<p>```</p>
+<p>- Define un conjunto de movimientos que el robot puede realizar automáticamente.</p>
+<p> </p>
+<p>## 6. Funciones de Movimiento (`gaits`)</p>
+<p> </p>
+<p>```cpp</p>
+<p>boolean gaits(char cmd) {</p>
+<p>  switch (cmd) {</p>
+<p>    case FORWARD:</p>
+<p>      robot.run();</p>
+<p>      break;</p>
+<p>    case BACKWARD:</p>
+<p>      robot.run(0);</p>
+<p>      break;</p>
+<p>    // Otros casos para diferentes movimientos</p>
+<p>  }</p>
+<p>}</p>
+<p>```</p>
+<p>- Esta función recibe un comando y ejecuta el movimiento correspondiente en el robot.</p>
+<p> </p>
+<p>## 7. Detección de Obstáculos (si se activa el sensor HC-SR04)</p>
+<p> </p>
+<p>```cpp</p>
+<p>#ifdef __HC_SR04__</p>
+<p>char detect_obstacle(char cmd) {</p>
+<p>  long cm = distance_measure();</p>
+<p>  if (cm &lt; MIN_DISTANCE) {</p>
+<p>    i = STAND;</p>
+<p>  } else if (cm &gt;= MIN_DISTANCE &amp;&amp; cm &lt;= MAX_DISTANCE) {</p>
+<p>    i = BACKWARD;</p>
+<p>  }</p>
+<p>  return i;</p>
+<p>}</p>
+<p>```</p>
+<p>- Si el sensor ultrasónico está activado, esta función mide la distancia y ajusta el comando del robot si detecta un obstáculo.</p>
+<p> </p>
+<p>## 8. Medición de Distancia</p>
+<p> </p>
+<p>```cpp</p>
+<p>long distance_measure() {</p>
+<p>  // Medición de distancia usando el sensor HC-SR04</p>
+<p>}</p>
+<p>```</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="contenidos1.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="seccin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>
